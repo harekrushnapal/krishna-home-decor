@@ -2,27 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products - Krishna Home Decor</title>
   <link rel="stylesheet" href="/krishna-home-decor/style.css?v=2" />
+  <style>
+    .hero-banner {
+      background: url('https://source.unsplash.com/1600x500/?home-decor,furnishing') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero-banner h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .hero-banner p {
+      font-size: 1.2em;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .product-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .product-card h3 {
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    .product-card button, .product-card a {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .product-card button:hover, .product-card a:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <nav>
     <a href="/krishna-home-decor/index.html">Home</a> |
     <a href="/krishna-home-decor/products.html">Products</a> |
     <a href="/krishna-home-decor/about.html">About Us</a> |
-    <a href="/krishna-home-decor/contact.html">Contact</a> |
-    <a href="/krishna-home-decor/terms.html">Terms</a> |
-    <a href="/krishna-home-decor/returns.html">Returns</a>
+    <a href="/krishna-home-decor/contact.html">Contact</a>
   </nav>
-  <h1>Our Products</h1>
-  <ul>
-    <li>Sofa Covers (Elastic, Printed, Luxury)</li>
-    <li>Curtains (Patchwork, Heavy Knitting, Jhalar)</li>
-    <li>Bedsheets (Jaipuri, Cotton, Printed)</li>
-    <li>Doormats (Rubber, Anti-skid, Designer)</li>
-    <li>Dining Covers (PVC, Waterproof)</li>
-    <li>Cleaning Items (Mops, Wipers from Gala, Milton)</li>
-  </ul>
+
+  <section class="hero-banner">
+    <h1>Explore Our Products</h1>
+    <p>High-quality furnishings for every space. Retail & wholesale available.</p>
+  </section>
+
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="https://raw.githubusercontent.com/harekrushnapal/krishna-home-decor/main/cushion%20cover%20set%20of%205" alt="Cushion Cover Set">
+      <h3>Cushion Cover Set of 5</h3>
+      <p>Material: Velvet | Size: 16" x 16"</p>
+      <p><strong>Price:</strong> ₹299 + ₹40 Delivery</p>
+      <a href="https://wa.me/917809533009?text=I'm%20interested%20in%20the%20Cushion%20Cover%20Set%20of%205%20for%20₹299" target="_blank">Buy Now</a>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <h3>Sofa Covers</h3>
+      <p>Elastic, Printed, Luxury Sets</p>
+    </div>
+    <div class="product-card">
+      <h3>Curtains</h3>
+      <p>Door, Window, Patchwork, Jhalar, Heavy Knitting</p>
+    </div>
+    <div class="product-card">
+      <h3>Bedsheets</h3>
+      <p>Jaipuri, Cotton, Anti-bacterial, Printed</p>
+    </div>
+    <div class="product-card">
+      <h3>Doormats & Rugs</h3>
+      <p>Anti-skid, Rubber, Artificial Grass, Designer</p>
+    </div>
+    <div class="product-card">
+      <h3>Dining Table Covers</h3>
+      <p>PVC, Acrylic, Waterproof</p>
+    </div>
+    <div class="product-card">
+      <h3>Mattresses & Pillows</h3>
+      <p>Cushions, Covers, Pillow Covers</p>
+    </div>
+    <div class="product-card">
+      <h3>Cleaning Tools</h3>
+      <p>Mops, Brooms, Wipers (Milton, Gala)</p>
+    </div>
+    <div class="product-card">
+      <h3>Wallpapers & Floor Mats</h3>
+      <p>Decorative and Functional</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 1st Floor, Hotel Midtown, Above Gitanjali Saree Shop, Beside UCO Bank, Jaleswar, Odisha - 756032</p>
+    <p>📞 <a href="tel:+917809533009">+91 7809533009</a> | <a href="https://wa.me/917809533009">Chat on WhatsApp</a></p>
+    <p>&copy; 2025 Krishna Home Decor</p>
+  </footer>
 </body>
 </html>
